@@ -1,0 +1,33 @@
+2019/8/12校正后
+----------------------------------
+----- CROSSVALIDATION ------------
+----------------------------------
+[0.89945946 0.89459459 0.90810811 0.89675676 0.90864865 0.90210925
+ 0.9025974  0.89989177 0.89772727 0.89718615]
+0.9007079413212459
+----------------------------------
+----- FINAL RESULTS --------------
+----------------------------------
+total is  4624
+false positive rate: 0.02378892733564014
+true positive rate: 0.3125
+false negative rate: 0.07396193771626297
+true negative rate: 0.5897491349480969
+----------------------------------------------
+library detection: 0.9022491349480969
+good detect: 4172 0.9022491349480969
+bad detect: 452 0.09775086505190311
+All connection: 4624
+
+Best: 0.902223 using {'n_estimators': 1200}
+0.901898  with:   {'n_estimators': 500}
+0.900979  with:   {'n_estimators': 600}
+0.901249  with:   {'n_estimators': 700}
+0.902169  with:   {'n_estimators': 800}
+0.901141  with:   {'n_estimators': 900}
+0.901628  with:   {'n_estimators': 1000}
+0.901087  with:   {'n_estimators': 1100}
+0.902223  with:   {'n_estimators': 1200}
+0.901790  with:   {'n_estimators': 1300}
+0.901195  with:   {'n_estimators': 1400}
+

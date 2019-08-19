@@ -1,0 +1,103 @@
+----- CROSSVALIDATION ------------
+----------------------------------
+[0.92087312 0.92633015 0.93110505 0.94266212 0.92286689 0.93720137
+ 0.91467577 0.93651877 0.93583618 0.93579235]
+0.9303861763841477
+----------------------------------
+----- FINAL RESULTS --------------
+----------------------------------
+total is  3664
+false positive rate: 0.03111353711790393
+true positive rate: 0.46861353711790393
+false negative rate: 0.03902838427947598
+true negative rate: 0.46124454148471616
+----------------------------------------------
+library detection: 0.92985807860262
+good detect: 3407 0.92985807860262
+bad detect: 257 0.07014192139737992
+All connection: 3664
+
+
+2019/8/12校正后
+xg2
+----------------------------------
+----- CROSSVALIDATION ------------
+----------------------------------
+[0.93891892 0.92702703 0.94162162 0.93405405 0.93621622 0.94375338
+ 0.93722944 0.93398268 0.92694805 0.93614719]
+0.9355898577350714
+----------------------------------
+----- FINAL RESULTS --------------
+----------------------------------
+total is  4624
+false positive rate: 0.022275086505190313
+true positive rate: 0.3466695501730104
+false negative rate: 0.039792387543252594
+true negative rate: 0.5912629757785467
+----------------------------------------------
+library detection: 0.9379325259515571
+good detect: 4337 0.9379325259515571
+bad detect: 287 0.06206747404844291
+All connection: 4624
+
+xg1
+----------------------------------
+----- CROSSVALIDATION ------------
+----------------------------------
+[0.95351351 0.94       0.95351351 0.94324324 0.94054054 0.94375338
+ 0.94101732 0.94480519 0.93777056 0.93885281]
+0.9437010078462214
+----------------------------------
+----- FINAL RESULTS --------------
+----------------------------------
+total is  4624
+false positive rate: 0.019247404844290657
+true positive rate: 0.35337370242214533
+false negative rate: 0.03308823529411765
+true negative rate: 0.5942906574394463
+----------------------------------------------
+library detection: 0.9476643598615917
+good detect: 4382 0.9476643598615917
+bad detect: 242 0.0523356401384083
+All connection: 4624
+
+去掉4个特征后， 预测器1200，泛化能力提升
+----------------------------------
+----- CROSSVALIDATION ------------
+----------------------------------
+[0.95405405 0.93783784 0.95621622 0.94324324 0.94108108 0.94916171
+ 0.94426407 0.94372294 0.94318182 0.93993506]
+0.9452698037568238
+----------------------------------
+----- FINAL RESULTS --------------
+----------------------------------
+total is  4624
+false positive rate: 0.01643598615916955
+true positive rate: 0.3561851211072664
+false negative rate: 0.03027681660899654
+true negative rate: 0.5971020761245674
+----------------------------------------------
+library detection: 0.9532871972318339
+good detect: 4408 0.9532871972318339
+bad detect: 216 0.04671280276816609
+All connection: 4624
+(目前最高)
+
+
+Best: 0.945866 using {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 1600, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.943973  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 600, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.944027  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 700, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.943702  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 800, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.944568  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 900, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.944405  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 950, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.944514  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 1000, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.944676  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 1050, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.945000  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 1100, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.945325  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 1150, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.945271  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 1200, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.945487  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 1300, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.945595  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 1400, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.945757  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 1500, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.945866  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 1600, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.945757  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 1700, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
+0.945811  with:   {'colsample_bytree': 0.8, 'gamma': 0, 'learning_rate': 0.1, 'max_depth': 10, 'min_child_weight': 1, 'n_estimators': 1800, 'nthread': 4, 'objective': 'binary:logistic', 'scale_pos_weight': 1, 'seed': 3, 'subsample': 0.8}
